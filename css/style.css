@@ -1,0 +1,222 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background-image: linear-gradient(to bottom, #e4d9d9, lightblue); }
+
+header {
+  background-image: url(../fotos/header.jpg);
+  background-size: cover;
+  height: 400px;
+  margin-bottom: 20px; }
+  header h1 {
+    font-style: oblique;
+    font-size: 90px;
+    color: #ec7513;
+    text-align: center;
+    justify-content: baseline;
+    font-family: 'Shadows Into Light', cursive;
+    animation-name: tituloPrincipal;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    padding-bottom: 50px; }
+
+@keyframes tituloPrincipal {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    color: #3457a1;
+    transform: rotateX(360deg); } }
+
+.navegador {
+  background-image: linear-gradient(to right, #418a41, #69aedd); }
+  .navegador .navegadorLista {
+    font-size: 20px;
+    height: 100px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    animation-name: navGeneral;
+    animation-duration: 6s;
+    animation-iteration-count: 1; }
+
+@keyframes navGeneral {
+  from {
+    margin-left: 970px; }
+  to {
+    margin-right: 0px; } }
+  .navegador__item {
+    font-family: cursive; }
+  .navegador__link {
+    text-decoration: none;
+    color: #742074;
+    border-radius: 0.5px;
+    border-style: dashed; }
+    .navegador__link--activo {
+      background-color: black;
+      color: snow; }
+  .navegador .logo {
+    font-size: 20px;
+    color: greenyellow;
+    background-color: black;
+    animation-name: loGo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; }
+
+@keyframes loGo {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+.introduccion {
+  font-style: italic;
+  font-size: 32px;
+  text-align: center;
+  color: #1e096b;
+  font-family: 'Indie Flower', cursive;
+  margin-bottom: 50px;
+  padding-left: 15;
+  background-color: cadetblue;
+  animation-name: variedadIndex;
+  animation-duration: 15s;
+  animation-iteration-count: 20; }
+
+@keyframes variedadIndex {
+  0% {
+    background-color: coral; }
+  25% {
+    background-color: #81ee81; }
+  50% {
+    background-color: #9e3838; }
+  100% {
+    background-color: darkkhaki; }
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.fotosCarousel {
+  height: 400px;
+  width: 100%; }
+
+.articulo {
+  margin: 20px 20px; }
+  .articulo h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: #121412;
+    background-image: linear-gradient(to bottom, #c7d3c3, #94948d);
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .articulo p {
+    color: indianred;
+    font-family: monospace;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 20px;
+    border-color: #1a1919;
+    border-radius: 2px;
+    border-style: dotted; }
+
+.grilla {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px; }
+  .grilla .galeria {
+    flex: 25%;
+    padding: 5px;
+    margin-left: 15%; }
+    .grilla .galeria img {
+      width: 20%;
+      margin-top: 5px; }
+
+.cesped {
+  margin: 20px; }
+  .cesped .tiposCesped {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 20px; }
+  .cesped h2 {
+    font-size: 25px;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #aaa2b8; }
+  .cesped p {
+    font-size: 19px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 15px; }
+  .cesped ul {
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 30px; }
+    .cesped ul li {
+      list-style-type: circle; }
+  .cesped .fotosCesped {
+    margin-bottom: 35px; }
+    .cesped .fotosCesped h3 {
+      font-size: 20px; }
+
+h2 {
+  font-size: 25px;
+  font-weight: bolder;
+  color: black;
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: #a89981; }
+
+.nosotros {
+  color: #0a0b75;
+  font-family: 'Heebo', sans-serif;
+  font-style: italic;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 21px; }
+
+.fotoNosotros {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 50px; }
+
+.formulario {
+  margin-left: 20px;
+  margin-bottom: 35px; }
+
+.parrafoUno {
+  font-family: verdana;
+  font-weight: 0.2px;
+  font-size: 23px;
+  background-color: #352f2f;
+  color: white;
+  text-align: center;
+  margin-bottom: 35px; }
+
+.parrafoDos {
+  font-family: verdana;
+  font-weight: 0.3px;
+  font-size: 25px;
+  background-color: #70212e;
+  color: #5fe6a2;
+  text-align: center;
+  margin-bottom: 35px; }
+
+.audio {
+  text-align: center;
+  margin-bottom: 50px; }
+
+footer {
+  background-color: #286628;
+  display: block;
+  justify-content: space-evenly;
+  text-align: center;
+  height: 150px; }
+  footer p {
+    font-size: 20px;
+    color: black; }

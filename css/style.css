@@ -15,12 +15,12 @@ header {
     font-size: 90px;
     color: #ec7513;
     text-align: center;
-    justify-content: baseline;
     font-family: 'Shadows Into Light', cursive;
     animation-name: tituloPrincipal;
     animation-duration: 15s;
     animation-iteration-count: infinite;
-    padding-bottom: 50px; }
+    padding-bottom: 50px;
+    padding-top: 100px; }
 
 @keyframes tituloPrincipal {
   0% {
@@ -153,14 +153,15 @@ header {
     margin-bottom: 15px; }
   .cesped ul {
     font-size: 18px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 30px; }
     .cesped ul li {
       list-style-type: circle; }
-  .cesped .fotosCesped {
-    margin-bottom: 35px; }
-    .cesped .fotosCesped h3 {
-      font-size: 20px; }
+  .cesped .fotosCesped h3 {
+    text-align: center;
+    color: #ca1019;
+    font-size: 30px;
+    margin-bottom: 15px; }
 
 h2 {
   font-size: 25px;
@@ -169,6 +170,11 @@ h2 {
   text-align: center;
   margin-bottom: 30px;
   background-color: #a89981; }
+
+h4 {
+  font-size: 300px;
+  background-color: red;
+  color: black; }
 
 .nosotros {
   color: #0a0b75;
@@ -220,3 +226,39 @@ footer {
   footer p {
     font-size: 20px;
     color: black; }
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: linear-gradient(to bottom, #549254, #d8bd8b); }
+  h1 {
+    padding-top: 100px; }
+  .navegador {
+    height: 200px;
+    padding-top: 48px; }
+  .navegadorLista {
+    flex-direction: column;
+    font-size: 30px;
+    justify-content: space-between;
+    height: max-content; }
+  .introduccion {
+    font-family: 'Merienda', cursive;
+    font-size: 25px; }
+  footer {
+    background-image: linear-gradient(to bottom, black, grey); }
+  .articulo {
+    color: gray;
+    font-weight: bolder; }
+  h2 {
+    background-color: #dfa458;
+    color: #5166da; }
+  .nosotros {
+    color: #1a1818;
+    background-image: linear-gradient(to left, #b94c4c, #4545c5); }
+  .fotoNosotros {
+    flex-direction: column;
+    width: 50%;
+    height: 35%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-left: 25%; } }

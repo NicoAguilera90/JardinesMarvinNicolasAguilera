@@ -13,13 +13,15 @@ header{background-image: url(../fotos/header.jpg);
     h1{font-style:oblique;
         font-size: 90px;    
         color: rgb(236, 117, 19) ;    
-        text-align: center;
-        justify-content: baseline;        
+
+        text-align: center;        
+
         font-family: 'Shadows Into Light', cursive;
         animation-name: tituloPrincipal;
         animation-duration: 15s;
         animation-iteration-count: infinite;
         padding-bottom: 50px;
+        padding-top: 100px;
            
         @keyframes tituloPrincipal {
             0%{transform:rotate(0deg) ;
@@ -36,6 +38,7 @@ header{background-image: url(../fotos/header.jpg);
 .navegador{
     background-image: linear-gradient(to right,rgb(65, 138, 65),rgb(105, 174, 221))
     ;
+    
  .navegadorLista{
     
     font-size: 20px;
@@ -182,16 +185,19 @@ header{background-image: url(../fotos/header.jpg);
         margin-bottom: 15px;        
     }
     ul{font-size: 18px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         margin-bottom: 30px;
         li{
         list-style-type: circle;}
      }
    
-    .fotosCesped{
-        margin-bottom: 35px;
-        h3{font-size: 20px;}
-
+     .fotosCesped{
+        h3{
+            text-align: center;
+            color: rgb(202, 16, 25);
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
     }
     
 
@@ -207,6 +213,9 @@ h2{ font-size: 25px;
 
     
 }
+h4{font-size: 300px;
+background-color: red;
+color: black;}
 
 .nosotros{
     color: rgb(10, 11, 117);
@@ -271,6 +280,63 @@ color: black;}
 
 
 
+@media only screen and(max-width:600px){
+    body{background-image:linear-gradient(to bottom,rgb(84, 146, 84),rgb(216, 189, 139)) }
+
+    h1{padding-top: 100px;}
+
+    .navegador{height: 200px;
+    padding-top: 48px;
+    }
+   
+
+
+   .navegadorLista{flex-direction: column;
+    font-size: 30px;
+    justify-content: space-between;
+    height: max-content;
+    }
+
+    .introduccion{font-family: 'Merienda', cursive;
+    font-size: 25px;
+    }
+
+    footer{background-image: linear-gradient(to bottom,black,grey)    
+    }
+
+    .articulo{color: gray;
+    font-weight: bolder;
+    }
+
+    h2{background-color: rgb(223, 164, 88);
+    color: rgb(81, 102, 218);
+    }
+
+    .nosotros{color: rgb(26, 24, 24);
+    background-image: linear-gradient(to left,rgb(185, 76, 76),rgb(69, 69, 197));
+    }
+
+    .fotoNosotros{
+        flex-direction: column;
+        width: 50%;
+        height: 35%;
+        justify-content:space-between;
+        align-items: center;
+        text-align: center;
+        margin-left: 25%;
+        
+    }
+
+    
+ }
+
+
+
+
+
+
+
+    
 
 
 
